@@ -25,7 +25,21 @@
     <label class="form-label" for="form4Example3">Message</label>
   </div>
 
-  <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+  <button class="btn btn-primary send" onclick="funkcja()">Wyślij</button>
+  <button class="btn btn-danger">Wyczyść</button>
+  
+  <p id="counter">0</p>
+  
 </form>
+
+  <script>
+	var ile = 0
+	let send = document.querySelector('.send');
+	let element = document.getElementById("counter");
+	function funkcja(){
+		ile++
+		element.innerHTML = ile;
+	}
+  </script>
 </body>
 </html>
